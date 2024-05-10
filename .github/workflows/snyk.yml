@@ -5,7 +5,7 @@ description: 'Snyk test demo for Maven 3.9.3/JAVA 17,linked to US - https://atc.
 on: push
 jobs:
   security:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
