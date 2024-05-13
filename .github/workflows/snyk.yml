@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/maven-3-jdk-17@v2 # Ajustado para a última versão estável conhecida
+        uses: snyk/actions/maven-3-jdk-17@master # Ajustado para a última versão estável conhecida
         continue-on-error: true
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
